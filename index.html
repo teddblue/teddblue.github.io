@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>teddblue</title>
+
+    <!-- Google Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1230923795351848"
+     crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDP66SX5Q6"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KDP66SX5Q6');
+    </script>
+</head>
+<body>
+    <h1>teddblue</h1>
+    <p>sorry about the mess! this site is under construction</p>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'about')" id="defaultOpen"><h2>About Me</h2></button>
+        <button class="tablinks" onclick="openTab(event, 'groups')" id="defaultOpen"><h2>Groups</h2></button>
+        <button class="tablinks" onclick="openTab(event, 'projects')" id="defaultOpen"><h2>My Projects</h2></button>
+    </div>
+
+    <div id="about" class="tabcontent">
+        <div>
+            <p>I am a programmer, musician, artist, and writer. You can learn alot about me here on my home site!</p>
+        </div>
+        <div>
+            <h2>Socials</h2>
+            <p>YouTube: <a href="https://www.youtube.com/@teddblue">@teddblue</a></p>
+            <p>Snapchat: <a href="">teddblue420</a></p>
+            <p>Twitter: <a href="https://twitter.com/teddblue420">@teddblue420</a></p>
+            <p>Reddit: <a href="https://www.reddit.com/user/teddblue">u/teddblue</a></p>
+        </div>
+        <div>
+            <h2>Projects</h2>
+            <p>github: <a href="https://github.com/teddblue">teddblue</a></p>
+            <p>gitlab: <a href="https://gitlab.com/teddblue">teddblue</a></p>
+            <p>replit: <a href="https://replit.com/@teddblue">@teddblue</a></p>
+            <p>Scratch: <a href="https://scratch.mit.edu/users/teddblue/">teddblue</a></p>
+        </div>
+    </div>
+
+    <div id="groups" class="tabcontent">
+        <div>
+            <h2>Mariachi</h2>
+            <p>I've been a member of multiple Mariachi groups, including Mariachi Corazon de Oro and the Mariachi Academy of New England</p>
+        </div>
+        <div>
+            <h2>National Honors Society</h2>
+            <p>I've been a member of the NHS for two years, doing lots of work for my school and community</p>
+        </div>
+    </div>
+
+    <div id="projects" class="tabcontent">
+        <div>
+            <h2>gamebois</h2>
+            <p>over a year old now, this website is dedicated to allowing people to access classic games that shaped the industry. It hosts sites that are no longer sold by the publisher and brings some joy to those with limited access to video games</p>
+            <a href="https://teddblue.gitlab.io/gamebois">check it out</a>
+        </div>
+        <div>
+            <h2>Super Mario Pipe Land</h2>
+            <p>A fangame that celebrates various games and characters from the SNES, GBA, and Sega Genesis. It was made in MIT's Scratch using assets from classic games. It features 16 levels, 7 characters, and 100 unique tiles and entities.</p>
+            <a href="https://teddblue.itch.io/super-mario-pipe-land">check it out</a>
+        </div>
+    </div>
+
+    <!-- Tab code (by W3Schools)-->
+    <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        function openTab(evt, TabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(TabName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
