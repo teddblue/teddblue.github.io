@@ -10,9 +10,6 @@ h1 {
 h2 {
     text-align: center;
 }
-p {
-    text-align: left;
-}
 div {
     padding-left: 10%;
     padding-right: 10%;
@@ -40,7 +37,6 @@ div {
     background-color: #3333aa;
 }
 .tabcontent {
-    display: none;
     animation: fadeEffect 1s;
 }
 @keyframes fadeEffect {
