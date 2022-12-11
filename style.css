@@ -16,6 +16,16 @@ div {
     padding-top: 2%;
     padding-bottom: 3%;
 }
+.icon {
+    text-align: justify;
+    width: 128px;
+    height: auto;
+}
+.icon img{
+    display: block;
+    width: 128px;
+    height: auto;
+}
 .tab {
     text-align: center;
 }
