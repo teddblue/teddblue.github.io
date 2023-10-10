@@ -22,8 +22,9 @@
 <body>
     <h1>teddblue</h1>
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'about')"><h2>About</h2></button>
+        <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'about')"><h2>About</h2></button>
         <button class="tablinks" onclick="openTab(event, 'projects')"><h2>Projects</h2></button>
+        <button class="tablinks" onclick="openTab(event, 'read')"><h2>Read</h2></button>
 		<button class="tablinks" onclick="openTab(event, 'more')"><h2>More</h2></button>
     </div>
 
@@ -71,6 +72,19 @@
 			<a href="https://scratch.mit.edu/users/teddblue/">check out my projects here</a>
 		</div>
     </div>
+
+    <div id="read" class="tabcontent">
+		<p>I'm writing a book! you'll see chapters here soon!</p>
+        <div>
+            <h1>Tebata: Memories of Stone</h1>
+            <p>
+                Welcome to the world of Tebata!
+                Makari is trying to discover the fate of those who were sacrificed during the reign of the Dakani.
+                However, her mission gets much more complicated when she meets some new friends and foes.
+            </p>
+        </div>
+        <p>more coming soon? idk. i want to focus on what I'm currently writing. There will definately be tidbits and snippets now and then!</p>
+	</div>
 
 	<div id="more" class="tabcontent">
 		<p>I really enjoy drawing, so I've included a collection here. My art is uploaded to google drive for speed and convenience.</p>
