@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>English Studio</title>
+</head>
+<body>
+	<div class="tab">
+		<button id="defaultOpen" class="tablinks" onclick="openTab(event, 'photos')"><h2>Photos</h2></button>
+		<button class="tablinks" onclick="openTab(event, 'curation')"><h2>Curation</h2></button>
+		<button class="tablinks" onclick="openTab(event, 'about')"><h2>About Me</h2></button>
+		<button class="tablinks" onclick="openTab(event, 'remix')"><h2>Remix</h2></button>
+		<button class="tablinks" onclick="openTab(event, 'reflect')"><h2>Reflection</h2></button>
+	</div>
+
+	<!-- tabs content-->
+	
+	<div id="photos" class="tabcontent">
+		<h1>Photos of Embodied Space</h1>
+		<p>ENGL 1007 Studio: Portfolio Project 1</p>
+		<iframe height="500px" max-height="90%" width="90%" src="https://docs.google.com/document/d/e/2PACX-1vQp0Cdy7kdrNP_8WHSg62lcXl8R33j8KJiHYZh0aucKTeTyXYui3NhGHAS-EpbR8n0BnIOBSEdzXkQl/pub?embedded=true"></iframe>
+	</div>
+	<div id="curation" class="tabcontent">
+		<h1>Curation</h1>
+		<p>ENGL 1007 Studio: Portfolio Project 2</p>
+		
+		<h2>Vote Kida Commercials</h2>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=D5HSihdlu5vc-_s9&amp;list=PLwmCQP5Z1QAIEEV9k6jMVFZKsisXKPIE_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		<p>I made these back in high school for a mock election we had. Back in 2021, speech ai was quite novel and uncommon. Instead of using modern AI, I used a text to speech engine. I wrote all the dialog myself. They were pretty funny and people enjoyed them. To share them I created stickers utilizing QR codes, which weren’t used as often either (until mine got popular, of course).</p>
+		
+		<h2>The Illuminatti of the Four-Sided Triangle of Doom</h2>
+		<p>this media is currently lost. Once recovered it will be hosted here</p>
+		<p>In high school I made this presentation as a satirical piece for a project where we were allowed to teach our own lesson. It was a theory stating that tarzan, beauty and the beast, and curious george were all a part of the same universe. As my performance becomes more and more erratic I explain their connection to all fictional universes and to our own. This was in no way meant to be taken seriously, and was mainly for being able to perform within the confines of a slideshow presentation.
+</p>
+		<h2>Gigantopithecus</h2>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/sbL6IyaxooA?si=vQttWkG3o_2Eq9uy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		<p>I made this for my Anthropology class in college. It's a comedic parody of the end sequences in the popular children's show “Dinosaur Train”, where Dr. Scott the Paleontologist goes over some details about the preceding episode’s creature with a group of young children. With the help of my roommate, a greenscreen I couldn't get working, and socks to substitute for children, I put on an educational and very entertaining performance. I'm really proud of this as I had to script and film it instead of my usual freestyle performance or unperformed written skits. 
+</p>
+		<h2>some thoughts</h2>
+		<p>My curation tells the story of my progress in media creation. I went from simple computer generated sound and imagery to projects where I step in front of the camera and do all the talking myself with some original flair. These are all projects that I put a lot of passion and spirit into. I made sure that they were informative when they had to be, and funny any chance they could. While text to speech had a good amount of funny points on its own, being able to add my own voice, tone, and movement to the script made the whole process a lot more fun and expressive, and it did the same to the final product. I think a big thing that changed was going from simple dumb funnies to content that makes sure to teach everything it has to, while also being able to tactfully and potently deliver the entertainment. One important thing in my writing is making sure my audience can enjoy what I make them. I could have the healthiest food in the world, but i need to make sure i give it flavor, texture, and color, or else no one will try it!
+</p>
+	</div>
+	<div id="about" class="tabcontent">
+		<h1>About ME</h1>
+		<p>ENGL 1007 Studio: Portfolio Project 3</p>
+	</div>
+	<div id="remix" class="tabcontent">
+		Studio PP4
+		this is an empty remix page
+	</div>
+	<div id="reflect" class="tabcontent">
+		Studio PP5
+		this is an empty Circulation Reflection page
+	</div>
+
+	<!-- Tab code (by W3Schools)-->
+	<script>
+		document.getElementById("defaultOpen").click();
+		function openTab(evt, TabName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(TabName).style.display = "block";
+		evt.currentTarget.className += " active";
+		}
+	</script>
+</body>
+</html>
