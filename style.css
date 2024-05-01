@@ -16,14 +16,16 @@ div {
     padding-top: 2%;
     padding-bottom: 3%;
 }
+.grid-container {
+	display: grid;
+}
 .icon {
-    text-align: justify;
-    width: 128px;
+    text-align: center;
+    width: 8rem;
     height: auto;
 }
 .icon img{
-    display: block;
-    width: 128px;
+    width: 8rem;
     height: auto;
 }
 .tab {
