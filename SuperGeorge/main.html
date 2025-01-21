@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Super George</title>
+</head>
+<body>
+    <h1>Super George</h1>
+    <div class="tab">
+        <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'latest')"><h2>Latest Page</h2></button>
+        <button class="tablinks" onclick="openTab(event, 'chapter')"><h2>Chapter 1</h2></button>
+    </div>
+
+    <div id="latest" class="tabcontent">
+        <p>chapter 1, page 1</p>
+        <img class="page" src="./Comic/CH01/SG_CH01_PG01.png" alt="Super George: Chapter 1, Page 1">
+    </div>
+    <div id="chapter" class="tabcontent">
+        <img class="page" src="./Comic/CH01/SG_CH01_PG01.png" alt="Super George: Chapter 1, Page 1">
+        <img class="page" src="./Comic/CH01/SG_CH01_PG02.png" alt="Super George: Chapter 1, Page 2">
+        <img class="page" src="./Comic/CH01/SG_CH01_PG03.png" alt="Super George: Chapter 1, Page 3">
+    </div>
+
+    <!-- Tab code (by W3Schools)-->
+    <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        function openTab(evt, TabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(TabName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
